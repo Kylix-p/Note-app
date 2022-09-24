@@ -148,8 +148,8 @@ main a:hover {
 }
 
 img{
-    width: 14%;
-    margin-top: 10%;
+    width: 23%;
+    margin-top: 5%;
 }
 /* =====================
     For Mobile screens
@@ -186,9 +186,7 @@ img{
     }
 }
 
-.boxing{
-    background: blue;
-}
+
 /* =======================
     Styles for new note
 ======================= */

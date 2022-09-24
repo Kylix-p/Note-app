@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+    <title>New Note</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color">
+    <link rel="stylesheet" href="../css/notestyle.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+</head>
+
+<body>
+    <nav>
+        <ul class="newnote-navbar-list">
+            <li class="dark-mode newnote-navbar-darkmode"><span>Dark Mode:</span>
+                <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+              </label>
+            </li>
+            <li><a href="notes.html" class="newnote-navbar-link">Saved Notes</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="newnote-container boxing">
+            <form>
+                <textarea placeholder="Add text here"></textarea>
+            </form>
+            <div class="button-style">
+                <button class="action-button clear-button">Clear</button>
+                <button class="action-button save-button">Save</button>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

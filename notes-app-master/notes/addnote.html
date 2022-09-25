@@ -36,15 +36,33 @@
             <form>
                 <div style="position: relative;">
                 <textarea class="title" placeholder="Title"></textarea>
-            </div>
+            <!-- </div>
                 <div style="position: relative;">
-                <textarea class="desc" placeholder="Description" id="myInput" type="text"></textarea>
+                <textarea class="desc" placeholder="Description" id="myInput" type="text" ></textarea>
                 <i onclick="myFunction()" class="fa-solid fa-copy" style=" position: absolute;
                 bottom: 5%;
                 right: 7%;
                 cursor: pointer;
                 font-size: xx-large;"></i>
-            </div>
+            </div> -->
+        </div>
+        <div style="position: relative;">
+            <fieldset class="desc" placeholder="Description" id="myInput" type="text"  contenteditable="true">
+            </fieldset>
+            <fieldset>
+              <button type="button" class="fontStyle" onclick="document.execCommand('italic',false,'i');" title="Italicize Highlighted Text"><i>I</i>
+              </button>
+              <button type="button" class="fontStyle" onclick="document.execCommand( 'bold',false,'b');" title="Bold Highlighted Text"><b>B</b>
+              </button>
+              <button  type="button" class="fontStyle" onclick="document.execCommand( 'underline',false,null);" title='Underline Highlighted Text'><u>U</u>
+              </button>
+            </fieldset>
+        <i onclick="myFunction()" class="fa-solid fa-copy" style=" position: absolute;
+        bottom: 5%;
+        right: 7%;
+        font-size: xx-large;"></i>
+    </div>
+             </div>
             </form>
             <div class="button-style">
                 <button class="action-button clear-button">Clear Note</button>

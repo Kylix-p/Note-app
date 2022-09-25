@@ -148,8 +148,8 @@ main a:hover {
 }
 
 img{
-    width: 14%;
-    margin-top: 10%;
+    width: 23%;
+    margin-top: 5%;
 }
 /* =====================
     For Mobile screens
@@ -186,6 +186,10 @@ img{
     }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> c98c1b5ab57aa8fb6af024a10778696c60b887fa
 /* =======================
     Styles for new note
 ======================= */

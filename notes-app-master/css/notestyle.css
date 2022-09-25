@@ -277,6 +277,9 @@ button:focus {
 }
 
 @media (max-width: 675px) {
+    img{
+        width: 80%;
+    }
     nav .newnote-navbar-list {
         font-size: 1.4rem;
     }
@@ -305,4 +308,12 @@ button:focus {
     .delete-button {
         font-size: 1.3rem;
     }
+}
+
+/* =======================
+    Styles for copy button animation
+======================= */
+
+.fa-copy:active{
+transform: translateY(3px);    
 }

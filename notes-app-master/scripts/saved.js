@@ -42,7 +42,8 @@ toggleSwitch.addEventListener('change', switchTheme);
 const body = document.querySelector('body');
 const main = document.querySelector('main');
 const editModal = document.querySelector('.modal');
-const textarea = document.querySelector('textarea');
+const textareaTitle = document.querySelector('.title');
+const textareaDesc = document.querySelector('.desc');
 const editNote = document.querySelector('.edit-button');
 const deleteNote = document.querySelector('.delete-button');
 const exitModal = document.querySelector('.exit-modal-button');
@@ -72,15 +73,18 @@ function getNote() {
         //displays notes
         for (let i = 0; i <= notesList.length; i++) {
             let note = document.createElement('li');
-            note.textContent = notesList[i].text;
+            note.textContent = notesList[i].textTitle;
+            note.textContentDesc = notesList[i].textDesc;
             note.className = 'new-note';
             list.appendChild(note);
 
             //displays area for editing note
             note.addEventListener('click', function() {
                 editModal.style.display = 'block';
-                textarea.value = note.textContent;
-                textarea.id = notesList[i].id;
+                textareaTitle.value = note.textContent;
+                textareaTitle.id = notesList[i].id;
+                textareaDesc.value = note.textContentDesc;
+                textareaDesc.id = notesList[i].id;
                 editDate.textContent = notesList[i].date;
             })
         }
@@ -127,7 +131,7 @@ deleteNote.addEventListener('click', function() {
         .then((willDelete) => {
             if (willDelete.value) {
                 notesList = notesList.filter(currentnote => {
-                    return !(currentnote.id == textarea.id);
+                    return !(currentnote.id == textareaTitle.id);
                 });
                 localStorage['notes'] = JSON.stringify(notesList);
                 if (notesList == false) {
@@ -145,11 +149,12 @@ deleteNote.addEventListener('click', function() {
 
 editNote.addEventListener('click', function() {
     notesList = notesList.map(currentnote => {
-        if (currentnote.id == textarea.id) {
+        if (currentnote.id == textareaTitle.id && currentnote.id == textareaDesc.id) {
             let noteDate = new Date;
             return {
                 id: currentnote.id,
-                text: textarea.value,
+                textTitle: textareaTitle.value,
+                textDesc: textareaDesc.value,
                 date: `Last edited at ${noteDate.toLocaleTimeString()} on ${days[noteDate.getDay()]}, ${noteDate.getDate()} ${months[noteDate.getMonth()]} ${noteDate.getFullYear()}`
             };
         } else {

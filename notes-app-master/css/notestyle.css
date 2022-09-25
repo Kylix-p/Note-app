@@ -199,11 +199,24 @@ img{
 ======================= */
 
 .newnote-container {
-    margin: 3em auto;
+    margin: 5em auto;
     width: 90%;
 }
-
-textarea {
+.title{
+    height: 4em;
+    width: 90%;
+    border-radius: 2em;
+    padding: 1em;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--font-color);
+    font-size: 1.3rem;
+    resize: none;
+    /* font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; */
+    letter-spacing: .03rem;
+    
+}
+.desc{
     height: 20em;
     width: 90%;
     border-radius: 2em;
@@ -216,6 +229,19 @@ textarea {
     /* font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; */
     letter-spacing: .03rem;
 }
+/* textarea {
+    height: 20em;
+    width: 90%;
+    border-radius: 2em;
+    padding: 1em;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--font-color);
+    font-size: 1.3rem;
+    resize: none;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    letter-spacing: .03rem;
+} */
 
 textarea::placeholder {
     color: var(--font-color);
@@ -243,7 +269,7 @@ button:focus {
 }
 
 .action-button {
-    width: 5em;
+    width: 7em;
 }
 
 .edit-button {

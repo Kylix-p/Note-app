@@ -40,16 +40,25 @@ toggleSwitch.addEventListener('change', switchTheme);
     To clear textarea
 =================== */
 
-const textarea = document.querySelector('textarea');
+const textareaTitle = document.querySelector('.title');
+const textareaDesc = document.querySelector('.desc');
 const clearButton = document.querySelector('.clear-button');
 
-function clearTextArea() {
-    if (textarea.value !== '') {
-        textarea.value = '';
+function clearTextAreaTitle() {
+    if (textareaTitle.value !== '') {
+        textareaTitle.value = '';
     }
 };
 
-clearButton.addEventListener('click', clearTextArea);
+clearButton.addEventListener('click', clearTextAreaTitle);
+
+function clearTextAreaDesc() {
+    if (textareaDesc.value !== '') {
+        textareaDesc.value = '';
+    }
+};
+
+clearButton.addEventListener('click', clearTextAreaDesc);
 
 /* ========================
     To save notes and show
@@ -64,11 +73,13 @@ const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
 function saveToStorage() {
-    let note = textarea.value;
+    let noteTitle = textareaTitle.value;
+    let noteDesc = textareaDesc.value;
     let noteDate = new Date;
     notesList.push({
         id: Date.now(),
-        text: note,
+        textTitle: noteTitle,
+        textDesc: noteDesc,
         date: `Last edited at ${noteDate.toLocaleTimeString()} on ${days[noteDate.getDay()]}, ${noteDate.getDate()} ${months[noteDate.getMonth()]} ${noteDate.getFullYear()}`
     });
     localStorage['notes'] = JSON.stringify(notesList);
@@ -91,7 +102,7 @@ function saveToStorage() {
 }
 
 function saveNote() {
-    if (textarea.value !== '') {
+    if (textareaTitle.value !== '' && textareaDesc.value !== '') {
         if (localStorage.length === 1) {
             saveToStorage();
         } else if (localStorage.length === 0) {
@@ -105,7 +116,8 @@ function saveNote() {
             notesList = JSON.parse(localStorage['notes']);
             saveToStorage();
         }
-        textarea.value = '';
+        textareaTitle.value = '';
+        textareaDesc.value = '';
     } else {
         swal.fire({
             title: "Note cannot be empty!",

@@ -200,7 +200,7 @@ img{
 ======================= */
 
 .newnote-container {
-    margin: 5em auto;
+    margin: 7em auto;
     width: 90%;
 }
 .title{
@@ -275,6 +275,7 @@ button:focus {
 
 .action-button {
     width: 7em;
+    cursor: pointer;
 }
 
 .edit-button {

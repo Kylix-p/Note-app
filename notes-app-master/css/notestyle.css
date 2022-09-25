@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
 /* ===============
     Color theme
 =============== */
+
 
 :root {
     --primary-color: rgb(228, 228, 228);
@@ -47,6 +52,9 @@ body {
 nav {
     background-color: var(--primary-color);
     color: var(--font-color);
+    position: fixed;
+    top: 0%;
+    width: 100%;
 }
 
 nav ul {
@@ -209,7 +217,7 @@ textarea {
     color: var(--font-color);
     font-size: 1.3rem;
     resize: none;
-    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    /* font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; */
     letter-spacing: .03rem;
 }
 

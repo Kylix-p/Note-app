@@ -267,6 +267,10 @@ textarea:focus,
 button:focus {
     outline: 0;
 }
+.frame{
+    display: flex;
+    justify-content: center;
+}
 
 .action-button {
     width: 7em;

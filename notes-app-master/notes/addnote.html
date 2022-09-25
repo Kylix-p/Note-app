@@ -6,6 +6,7 @@
     <meta name="theme-color">
     <link rel="stylesheet" href="../css/notestyle.css">
     <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
@@ -24,10 +25,22 @@
         </ul>
     </nav>
     <main>
-        <div class="newnote-container">
+        <div class="newnote-container" >
             <form>
-                <textarea class="title task" placeholder="Title"></textarea>
-                <textarea class="desc task" placeholder="Description"></textarea>
+                <div style="position: relative;">
+                <textarea class="title" placeholder="Title"></textarea>
+                <i class="fa-solid fa-copy" style="    position: absolute;
+                bottom: 35%;
+                right: 7%;
+                font-size: xx-large;"></i>
+            </div>
+                <div style="position: relative;">
+                <textarea class="desc" placeholder="Description"></textarea>
+                <i class="fa-solid fa-copy" style="    position: absolute;
+                bottom: 5%;
+                right: 7%;
+                font-size: xx-large;"></i>
+            </div>
             </form>
             <div class="button-style">
                 <button class="action-button clear-button">Clear Note</button>

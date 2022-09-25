@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
 :root {
     --primary-color: rgb(228, 228, 228);
     --font-color: rgb(0, 0, 0);
@@ -126,3 +130,34 @@
     }
 }
 
+/* ==================
+    Nav-Bar
+================== */
+
+nav {
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    font-size: 2.5rem;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--font-color);
+    margin-right: 1em;
+}
+
+.dark-mode {
+    display: flex;
+    align-items: center;
+}

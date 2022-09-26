@@ -202,6 +202,7 @@ img{
 .newnote-container {
     margin: 7em auto;
     width: 90%;
+    overflow-y: auto;
 }
 .title{
     height: 4em;

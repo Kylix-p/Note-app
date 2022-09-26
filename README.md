@@ -29,8 +29,6 @@ It is an responsive web-app which allows users to create new notes, edit, save, 
 
     View page
 
-    Bold, italics, underline, copy
-
 ---
 
 ### TechStack

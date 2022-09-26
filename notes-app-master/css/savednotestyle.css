@@ -30,7 +30,7 @@
     
     width: 95%;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
     margin: 0 auto;
     list-style: none;
@@ -112,12 +112,15 @@
 }
 
 @media (max-width: 675px) {
+    .home-icon{
+        left: 0.5em;
+    }
     .notes-list {
-        margin-top: 1em;
+        margin-top: 10 vh;
     }
     .new-note {
-        width: 48%;
-        max-height: 8em;
+        width: 90%;
+        max-height: 5vh;
     }
     .note-number {
         font-size: 1.2rem;

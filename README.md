@@ -10,7 +10,7 @@ It is an responsive web-app which allows users to create new notes, edit, save, 
 
 ### Live Demo
 
-##### ![Live demo](https://github.com/SobhanDash/Team-B/blob/main/assets/overallworkingV1.1.gif):
+##### ![Live demo]():
 
 ---
 
@@ -44,7 +44,7 @@ It is an responsive web-app which allows users to create new notes, edit, save, 
 
 ### Contributors
 
-1. [Sobhan Dash](https://github.com/SobhanDash)
-2. [Honey Tyagi](https://github.com/HoneyTyagii)
-3. [Srijoy Paul](https://github.com/srijoy-paul)
-4. [Jaskirat Singh](https://github.com/JASKIRAT11011)
+1.
+2. 
+3. 
+4. 

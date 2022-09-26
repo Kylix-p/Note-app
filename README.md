@@ -1,6 +1,6 @@
 # <h1 align="center"> M-notes!![Matrix Notes](https://github.com/SobhanDash/Team-B/blob/1f2718f6e8a33e612134d7f813d0ae3fd3155fe4/assets/favicon-32x32.png)</h1>
 
-## <h2 align="center">The Matrix Notepad 👩🏻‍💻👨🏻‍💻 </h2>
+## <h2 align="center">Cool As Code NotePad</h2>
 
 ### About
 
@@ -18,11 +18,11 @@ It is an responsive web-app which allows users to create new notes, edit, save, 
 
 <p align="center"><strong>Landing Page</strong></p>
 
-![Landing Page](https://github.com/SobhanDash/Team-B/blob/main/assets/landingpage.png?raw=true)
+![Landing Page]()
 
 <p align="center"><strong>Add Note Form</strong></p>
 
-![New Note](https://github.com/SobhanDash/Team-B/blob/main/assets/newnote.png?raw=true)
+![New Note]()
 
     Save page
 

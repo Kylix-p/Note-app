@@ -1,7 +1,7 @@
 function myFunction() {
     // Get the text field
     var copyText = document.getElementById("myInput");
-    
+  
     // Select the text field
     copyText.select();
     copyText.setSelectionRange(0, 99999); // For mobile devices
@@ -13,37 +13,19 @@ function myFunction() {
     // alert("Copied the text: " + copyText.value);
 }
 
-
-
-
-
-////------------mistakes below--------///////
-
-
-
-
-
-
-
-
-
-// function myFunction1() {
-   
-//     // Get the text field
-//     var id=JSON.parse(window.localStorage.getItem('notes'))[0].id;
-//     let copyText = document.getElementsById({row});
-//     console.log(`${id}`)
+function copyText() {
+    /* Get the text field */
+    var copyText = document.querySelector("#myInput");
   
-//     // Select the text field
-//     copyText.select();
-//     copyText.setSelectionRange(0, 99999); // For mobile devices
+    /* Select the text field */
+    copyText.select();
   
-//     // Copy the text inside the text field
-//     navigator.clipboard.writeText(copyText.value);
-    
-//     // Alert the copied text
-//     // alert("Copied the text: " + copyText.value);
-// }
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+  
+    /* Alert the copied text */
+    alert("Copied the text: " + copyText.value);
+}
 
 ///--------not working-----///
 

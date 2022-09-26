@@ -84,7 +84,7 @@ function getNote() {
                 textareaTitle.value = note.textContent;
                 textareaTitle.id = notesList[i].id;
                 textareaDesc.value = note.textContentDesc;
-                // textareaDesc = notesList[i].id;
+                textareaDesc.id = notesList[i].id;
                 editDate.textContent = notesList[i].date;
             })
         }

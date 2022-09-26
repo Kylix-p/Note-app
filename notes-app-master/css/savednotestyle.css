@@ -1,142 +1,145 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
 }
 :root {
-    --primary-color: rgb(228, 228, 228);
-    --font-color: rgb(0, 0, 0);
-    --bg-color: rgb(255, 255, 255);
-    --link-color: rgb(59, 16, 16);
-    --button-color: rgba(228, 228, 228, .8);
+  --primary-color: rgb(228, 228, 228);
+  --font-color: rgb(0, 0, 0);
+  --bg-color: rgb(255, 255, 255);
+  --link-color: rgb(59, 16, 16);
+  --button-color: rgba(228, 228, 228, 0.8);
 }
 
 [data-theme="dark"] {
-    --primary-color: #5c657c;
-    --font-color: #e1e1ff;
-    --bg-color: #161625;
-    --link-color: #929fc4;
-    --button-color: #6A789B;
+  --primary-color: #5c657c;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --link-color: #929fc4;
+  --button-color: #6a789b;
 }
-
 
 /* ========================
     Styles for saved notes
 ========================= */
 
 .notes-list {
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* justify-content: space-evenly; */
-    
-    width: 95%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 0;
-    margin: 0 auto;
-    list-style: none;
-    margin-top: 10vh;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-evenly; */
+
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  margin-top: 10vh;
 }
 
 .new-note {
-    font-weight:bolder;
-    background-color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    color: var(--font-color);
-    width: 90%;
-    margin: 2% 0;
-    max-height: 10em;
-    border-radius: 1em;
-    padding: 1em;
-    padding-bottom: 2em;
-    overflow: hidden;
-    text-align: left;
-    font-size: 1.2rem;
-    word-wrap: break-word;
+  font-weight: bolder;  
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--font-color);
+  width: 90%;
+  margin: 2% 0;
+  max-height: 10em;
+  border-radius: 1em;
+  padding: 1em;
+  padding-bottom: 2em;
+  overflow: hidden;
+  text-align: left;
+  font-size: 1.2rem;
+  word-wrap: break-word;
 }
 
 .new-note:hover {
-    background-color: var(--button-color);
-    border: 1px solid var(--button-color);
-    cursor: pointer;
+  background-color: var(--button-color);
+  border: 1px solid var(--button-color);
+  cursor: pointer;
 }
 
 .delete-all-notes {
-    height: 2em;
-    width: 10em;
-    margin-top: 2em;
-    cursor: pointer;
+  height: 2em;
+  width: 10em;
+  margin-top: 2em;
+  cursor: pointer;
 }
 
 .note-number {
-    font-size: 2rem;
-    margin: 0;
-    margin-top: 1rem;
-    text-align: left;
+  font-size: 2rem;
+  margin: 0;
+  margin-top: 1rem;
+  text-align: left;
 }
-
 
 /* ======================
     Styles for Edit modal
 ======================= */
 
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background: rgba(2, 2, 2, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .modal-content {
-    margin: 5% auto;
-    padding: 20px;
-    width: 80%;
+  margin: 5% auto;
+  padding: 20px;
+  width: 80%;
 }
 
 .exit-modal-button {
-    margin: auto;
-    right: 5rem;
-    top: 0;
-    position: fixed;
-    text-align: right;
-    font-size: 6rem;
-    cursor: pointer;
+  margin: auto;
+  right: 5rem;
+  top: 0;
+  position: fixed;
+  text-align: right;
+  font-size: 6rem;
+  cursor: pointer;
 }
 
 .time-edited {
-    font-style: italic;
-    font-size: 1.5rem;
+  font-style: italic;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 675px) {
-    .home-icon{
-        left: 0.5em;
-    }
-    .notes-list {
-        margin-top: 10 vh;
-    }
-    .new-note {
-        width: 90%;
-        max-height: 5vh;
-    }
-    .note-number {
-        font-size: 1.2rem;
-    }
-    .modal-content {
-        margin: 10% auto;
-        width: 100%;
-    }
-    .exit-modal-button {
-        right: 2rem;
-        font-size: 3rem;
-    }
-    .time-edited {
-        font-size: 1rem;
-    }
+  .home-icon {
+    left: 0.5em;
+  }
+  .notes-list {
+    margin-top: 10 vh;
+  }
+  .new-note {
+    width: 90%;
+    max-height: 5vh;
+  }
+  .note-number {
+    font-size: 1.2rem;
+  }
+  .modal-content {
+    margin: 10% auto;
+    width: 100%;
+  }
+  .exit-modal-button {
+    right: 2rem;
+    font-size: 3rem;
+  }
+  .time-edited {
+    font-size: 1rem;
+  }
 }
 
 /* ==================
@@ -144,29 +147,29 @@
 ================== */
 
 nav {
-    background-color: var(--primary-color);
-    color: var(--font-color);
-    position: fixed;
-    top: 0%;
-    width: 100%;
+  background-color: var(--primary-color);
+  color: var(--font-color);
+  position: fixed;
+  top: 0%;
+  width: 100%;
 }
 nav ul {
-    display: flex;
-    list-style: none;
-    font-size: 2.5rem;
-    align-items: center;
-    margin: 0 auto;
-    justify-content: space-between;
-    box-sizing: border-box;
+  display: flex;
+  list-style: none;
+  font-size: 2.5rem;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
 nav li a {
-    text-decoration: none;
-    color: var(--font-color);
-    margin-right: 1em;
+  text-decoration: none;
+  color: var(--font-color);
+  margin-right: 1em;
 }
 
 .dark-mode {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }

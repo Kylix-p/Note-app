@@ -327,3 +327,25 @@ button:focus {
 .fa-copy:active{
 transform: translateY(3px);    
 }
+
+/* ==================
+    Scroll-Bar
+================== */
+
+.desc::-webkit-scrollbar {
+    width: 12px; 
+    display: block;
+              /* width of the entire scrollbar */
+  }
+  .desc::-webkit-scrollbar-track {
+    margin: 2em 0.2em 2em;
+    max-height: 20%;
+    /* height: 50%; */
+    background: #2C2E43;
+    border-radius: 10px;
+  }
+  .desc::-webkit-scrollbar-thumb {
+    background-color: #19d0d5;    /* color of the scroll thumb */
+    border-radius: 20px;/* roundness of the scroll thumb */
+    border: 3px solid #2C2E43;/* creates padding around scroll thumb */
+  }

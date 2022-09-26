@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color">
     <link rel="stylesheet" href="../css/notestyle.css">
-   
     <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/logo.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/logo.svg">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/logo.svg">
@@ -22,13 +21,23 @@
     margin-top: 10px;
 ">
         <ul>
-            <li class="dark-mode"><span>Dark Mode:</span>
+
+            <li><a href="notes.html" ><span><i class="fa-solid fa-house"></i></span> </a></li> 
+            <div style="display:flex; ">
+            <li class="dark-mode">
+                <i class="fa-regular fa-sun"></i>
                 <label class="switch">
-                <input type="checkbox">
-                <span class="slider"></span>
-              </label>
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <i class="fa-regular fa-moon"></i> 
             </li>
-            <li><a href="notes.html" class="newnote-navbar-link">Saved Notes</a></li>
+            <li style="margin-left:1em ;"><a href="notes.html" class="newnote-navbar-link">
+                <span title="Saved Notes">
+                    <i class="fa-regular fa-note-sticky"></i>
+                  </span>
+            </a></li>
+        </div>
         </ul>
     </nav>
     <main>
@@ -47,8 +56,8 @@
             </div>
             </form>
             <div class="button-style">
-                <button class="action-button clear-button">Clear Note</button>
-                <button class="action-button save-button">Save</button>
+                <button class="action-button clear-button"  title="Clear Note"><i class="fa-solid fa-eraser"></i></button>
+                <button class="action-button save-button" title="Save"><i class="fa-solid fa-floppy-disk"></i></button>
             </div>
         </div>
     </main>

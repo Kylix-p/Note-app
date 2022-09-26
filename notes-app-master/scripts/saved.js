@@ -60,7 +60,7 @@ body.appendChild(notesNumber);
 body.appendChild(list);
 
 let notesList = JSON.parse(localStorage['notes']);
-notesNumber.innerHTML = `Number of saved notes: ${notesList.length}`;
+// notesNumber.innerHTML = `Number of saved notes: ${notesList.length}`;
 
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];

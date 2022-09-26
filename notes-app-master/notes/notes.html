@@ -4,8 +4,7 @@
     <title>Saved Notes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="../css/notestyle.css">
     <link rel="stylesheet" href="../css/savednotestyle.css">
     <link rel="manifest" href="manifest.json">
@@ -23,13 +22,18 @@
     margin-top: 10px;
 ">
         <ul>
-            <li class="dark-mode"><span>Dark Mode:</span>
+            <li><a href="notes.html" ><span><i class="fa-solid fa-house"></i></span> </a></li> 
+           <div style="display:flex; ">
+            <li class="dark-mode">
+                <i class="fa-regular fa-sun"></i>
                 <label class="switch">
-                <input type="checkbox">
-                <span class="slider"></span>
-              </label>
-            </li>
-            <li><a href="addnote.html">Add Note</a></li>
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <i class="fa-regular fa-moon"></i> 
+            </li >
+            <li style="margin-left:1em ;"><a href="addnote.html"><span title="Add Note" ><i class="fa-regular fa-square-plus"></i></span></a></li>
+        </div>
         </ul>
     </nav>
     <main>
@@ -61,8 +65,8 @@
             </form>
             <p class="time-edited"></p>
             <div class="button-style">
-                <button class="action-button delete-button">Delete</button>
-                <button class="action-button edit-button">Save changes</button>
+                <button class="action-button delete-button" title="Delete"><i class="fa-solid fa-trash-can"></i></button>
+                <button class="action-button edit-button" title="Save changes"><i class="fa-solid fa-floppy-disk"></i></button>
             </div>
         </div>
     </div>

@@ -18,10 +18,12 @@ It is an responsive web-app which allows users to create new notes, edit, save, 
 <p align="center"><strong>Add Note Form</strong></p>
 
 ![New Note]()
-    Light and Dark Mode
+    
     
     Save page
-
+        
+    Light and Dark Mode
+    
     Delete page
 
     View page

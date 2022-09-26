@@ -7,10 +7,6 @@
 It is an responsive web-app which allows users to create new notes, edit, save, delete as well as copy notes.
 ---
 
-### Live Demo
-
-##### ![Live demo]():
-
 ---
 
 ### App Features

@@ -1,4 +1,4 @@
-# <h1 align="center"> M-notes!![Matrix Notes](https://github.com/SobhanDash/Team-B/blob/1f2718f6e8a33e612134d7f813d0ae3fd3155fe4/assets/favicon-32x32.png)</h1>
+# <h1 align="center"> <h1>Notepad</h1>
 
 ## <h2 align="center">Cool As Code NotePad</h2>
 

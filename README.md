@@ -1,4 +1,4 @@
-# <h1 align="center"> <h1>Notepad</h1>
+# <h1 align="center"> <h1 align="center">Notepad</h1>
 
 ## <h2 align="center">Cool As Code NotePad</h2>
 

@@ -4,8 +4,7 @@
 
 ### About
 
-It is an responsive web-app which allows users to create new notes, edit, save, delete as well as copy notes. You can also use text formatting features like bold, italics and underline. You can create a note which is a fully functional Browser based Text-Editor.
-
+It is an responsive web-app which allows users to create new notes, edit, save, delete as well as copy notes.
 ---
 
 ### Live Demo

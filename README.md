@@ -4,7 +4,7 @@
 
 ### About
 
-It is an responsive web-app which allows users to create new notes, edit, save, delete as well as copy notes.
+It is an responsive web-app which allows users to create new notes, edit, save, delete as well as copy notes.You can also change theme Light and Dark.
 ---
 
 ---
@@ -18,7 +18,8 @@ It is an responsive web-app which allows users to create new notes, edit, save, 
 <p align="center"><strong>Add Note Form</strong></p>
 
 ![New Note]()
-
+    Light and Dark Mode
+    
     Save page
 
     Delete page

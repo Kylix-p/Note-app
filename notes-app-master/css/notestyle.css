@@ -165,6 +165,9 @@ img{
 ===================== */
 
 @media (max-width: 675px) {
+    .home-icon{
+        margin-left: 0.5em;
+    }
     nav ul {
         font-size: 1.5rem;
         padding: 0;

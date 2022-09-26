@@ -112,6 +112,9 @@
 }
 
 @media (max-width: 675px) {
+    .home-icon{
+        left: 0.5em;
+    }
     .notes-list {
         margin-top: 10 vh;
     }
